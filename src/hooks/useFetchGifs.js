@@ -9,8 +9,8 @@ export const useFetchGifs = ( category ) => {
         loading: true
     });
 
-    //  useEffect con el parametro [] hace que  getGifs se ejecute una sola vez cuando se 
-    //  renderice por primera vez.
+    //  useEffect con el parametro [] hace que  getGifs se ejecute una sola vez cuando se renderice por primera vez.
+    //  useEffect con el parametro [category] hace que  getGifs se ejecute cada vez que category cambie.
     useEffect( () => {
 
         getGifs( category )
